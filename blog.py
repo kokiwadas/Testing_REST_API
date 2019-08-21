@@ -6,4 +6,4 @@ class Blog:
         self.posts = []
 
     def __repr__(self):
-        return f'{self.title} by {self.author} ({len(self.posts)} posts)'
+        return f'{self.title} by {self.author} ({len(self.posts)} post{"s" if len(self.posts) != 1 else ""})'
