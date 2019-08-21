@@ -1,3 +1,5 @@
+from post import Post
+
 
 class Blog:
     def __init__(self, title, author):
@@ -7,3 +9,6 @@ class Blog:
 
     def __repr__(self):
         return f'{self.title} by {self.author} ({len(self.posts)} post{"s" if len(self.posts) != 1 else ""})'
+
+    def create_post(self, title, content):
+        self.posts.append(Post(title, content))
